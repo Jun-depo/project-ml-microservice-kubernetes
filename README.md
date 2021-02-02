@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+CircleCI status badge:
 
 [![Jun-depo](https://circleci.com/gh/Jun-depo/project-ml-microservice-kubernetes.svg?style=svg)](https://circleci.com/gh/Jun-depo/project-ml-microservice-kubernetes)
 
