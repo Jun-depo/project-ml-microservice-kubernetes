@@ -11,7 +11,7 @@ I am given a pre-trained, `sklearn` model that has been trained to predict housi
 ### Project Tasks
 
 The project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
-* Test your project code using linting
+* Test the project code using linting
 * Complete a Dockerfile to containerize this application
 * Deploy your containerized application using Docker and make a prediction
 * Improve the log statements in the source code for this application
@@ -34,7 +34,7 @@ Due to python3.7 are no longer availble in the installation packages, I used con
 * Run `conda activate .devops` to activate venv `.devops`
 * Run `make install` to install the necessary dependencies
 * Run `make lint`  (pylint app.py files and hadolint Dockerfile) to detect errors in the code.  
-* Acan also run `make all` instead of previous two steps.  
+* can also run `make all` instead of previous two steps.  
 
 ### Running `app.py`
 
