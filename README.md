@@ -4,13 +4,13 @@
 
 ## Project Overview
 
-In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
+In this project, I will apply the skills I have acquired in this course to operationalize a Machine Learning Microservice API. 
 
-You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+I am given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. Read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests the ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
 
 ### Project Tasks
 
-Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
+The project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
 * Test your project code using linting
 * Complete a Dockerfile to containerize this application
 * Deploy your containerized application using Docker and make a prediction
@@ -28,13 +28,13 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 ## Setup the Environment
 
 * Create a virtualenv and activate it
-Due to python3.7 are no longer availble in the installation packages. I used conda to create virtual enrinmrenet.  I have miniconda3 install on my local computer
-* $ source ~/miniconda3/bin/activate
-* $ conda create -n .devops python=3.7
-* $ conda activate .devops
+Due to python3.7 are no longer availble in the installation packages, I used conda to create virtual enrinmrenet because I can still install python3.7 with conda.  I have miniconda3 installed on my local computer
+* Run `source ~/miniconda3/bin/activate` to activate conda 
+* Run `conda create -n .devops python=3.7` to create virtual env with python3.7 installed 
+* Run `conda activate .devops` to activate venv `.devops`
 * Run `make install` to install the necessary dependencies
 * Run `make lint`  (pylint app.py files and hadolint Dockerfile) to detect errors in the code.  
-* Also run "make all" instead of previous two steps.  
+* Acan also run `make all` instead of previous two steps.  
 
 ### Running `app.py`
 
@@ -57,5 +57,5 @@ Due to python3.7 are no longer availble in the installation packages. I used con
     * Run `./run_kubernetes.sh`
     * Run `./make_prediction.sh` to make prediction and copy/paste the logging info at terminal to `output_txt_files/kubernetes_out.txt`
 3. Create Flask app in Container
-    * Run `./run_docker.sh` to build the Flask app container and start the container. 
+    * Run `./run_docker.sh` to build and start the Flask app container. 
     * Run `./upload_docker.sh` to upload the container to docker hub.   
